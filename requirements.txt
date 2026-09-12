@@ -1,0 +1,5 @@
+# CLI output styling (colors, spinners)
+rich>=13.0
+
+# Testing dependency (dev-only):
+pytest>=7.0

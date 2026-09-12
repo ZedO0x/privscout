@@ -1,0 +1,28 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local virtual environments (not part of the project)
+v/
+venv/
+.venv/
+
+# Editor/OS cruft
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets / environment files — never commit these
+.env
+.env.*
+*.pem
+*.key
+
+# Generated reports (contain data from the machine PrivScout ran on)
+reports/*.txt
+reports/*.json
+reports/*.html
