@@ -111,22 +111,6 @@ python3 privscout.py --help           # list all available module flags
 
 Real output from this project's own development machine (a Kali VM) — not staged. See `screenshots/` for the source SVGs, or regenerate them yourself with `python3 generate_screenshots.py`.
 
-**Banner + System Information:**
-
-![PrivScout banner and System Information module](screenshots/01_banner_system.svg)
-
-**Users & Groups — real findings from privileged group membership:**
-
-![Users & Groups module output with findings](screenshots/02_users_findings.svg)
-
-**SUID/SGID — classification catches unrecognized binaries (here: Kismet SDR capture helpers):**
-
-![SUID/SGID module output with findings](screenshots/03_suid_findings.svg)
-
-**Sudo — graceful degradation when a password is required (no crash, no hang):**
-
-![Sudo module output showing graceful degradation](screenshots/04_sudo_module.svg)
-
 ## Current Modules
 
 | # | Module | Status | Highlights |
