@@ -21,17 +21,14 @@ BANNER = r"""
 ╚══════════════════════════════════════════╝
 """
 
-# Fallback values produced by modules/system.py when a check fails. Steps
-# that land on one of these are shown as warnings instead of successes.
+
 FALLBACK_VALUES = {"unknown", "unset"}
 
-# Purely cosmetic pacing so each check is visibly distinct instead of the
-# whole section appearing at once. Detection itself is effectively instant.
 STEP_DELAY = 0.15
 
 LABEL_WIDTH = 18
 
-# (spinner text, display label, key into modules.system.collect()["system"])
+
 SYSTEM_STEPS = [
     ("Detecting OS name...", "OS Name", "os_name"),
     ("Detecting operating system...", "Operating System", "operating_system"),
@@ -44,7 +41,7 @@ SYSTEM_STEPS = [
     ("Getting parent process ID...", "Parent PID", "parent_process_id"),
 ]
 
-# (spinner text, env var name)
+
 ENV_STEPS = [
     ("Reading USER...", "USER"),
     ("Reading HOME...", "HOME"),
@@ -53,7 +50,7 @@ ENV_STEPS = [
     ("Reading PATH...", "PATH"),
 ]
 
-# Terminal style per severity level, used when rendering findings.
+
 SEVERITY_STYLES = {
     "CRITICAL": "bold red",
     "HIGH": "red",
