@@ -19,10 +19,6 @@ import privscout
 
 @contextmanager
 def _no_spinner(*args, **kwargs):
-    # Rich's Live-updating console.status() doesn't export cleanly when
-    # recorded (the exported SVG can reference a clip-path that was never
-    # defined, e.g. for the line the spinner last redrew). A screenshot is
-    # static anyway, so skip the animation and just print the final line.
     yield
 
 
