@@ -1,4 +1,14 @@
- # PrivScout
+# PrivScout
+
+<p>
+  <img src="https://img.shields.io/badge/python-3.8%2B-FF1E2D?style=flat-square&labelColor=111111" alt="Python 3.8+">
+  <img src="https://img.shields.io/badge/platform-Linux-B00020?style=flat-square&labelColor=111111" alt="Platform: Linux">
+  <img src="https://img.shields.io/badge/tests-pytest-B00020?style=flat-square&labelColor=111111" alt="Tests: pytest">
+  <img src="https://img.shields.io/badge/license-MIT-292020?style=flat-square&labelColor=111111" alt="License: MIT">
+</p>
+
+> [!IMPORTANT]
+> For **authorized** security testing only: penetration tests with written permission, CTFs, and your own labs. See [Legal / Authorized Use](#legal--authorized-use).
 
 A modular Linux privilege-escalation enumeration and security-assessment tool, designed for authorized penetration testing, CTFs, and security labs.
 
@@ -89,7 +99,7 @@ Modules are registered independently in `core/module_manager.py` and can be enab
 Requires Python 3.8+ and, for full functionality, a Linux system with `sudo`, `getcap` (libcap2-bin), and `systemctl` available (each module degrades gracefully if its optional binary is missing).
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ZedO0x/privscout.git
 cd privscout
 pip install -r requirements.txt   # installs rich (CLI output) and pytest (tests)
 ```
@@ -110,6 +120,22 @@ python3 privscout.py --help           # list all available module flags
 ## Example Output
 
 Real output from this project's own development machine (a Kali VM) — not staged. See `screenshots/` for the source SVGs, or regenerate them yourself with `python3 generate_screenshots.py`.
+
+**Banner and system information**
+
+![PrivScout banner and system module output](screenshots/01_banner_system.svg)
+
+**Users & groups findings**
+
+![PrivScout users module findings](screenshots/02_users_findings.svg)
+
+**SUID/SGID classification**
+
+![PrivScout SUID module findings](screenshots/03_suid_findings.svg)
+
+**Sudo rule analysis**
+
+![PrivScout sudo module output](screenshots/04_sudo_module.svg)
 
 ## Current Modules
 
